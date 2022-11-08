@@ -5,10 +5,6 @@ import { StyledTimeline } from "../src/components/Timeline/TimeLine";
 import Menu from "../src/components/Menu/Menu"
 
 function HomePage() {
-    const estilosDaHomePage = {
-        // backgroundColor: "red" 
-    };
-
     return (
         <>
             <CSSReset/>
