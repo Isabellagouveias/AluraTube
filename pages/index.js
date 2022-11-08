@@ -8,17 +8,22 @@ function HomePage() {
     return (
         <>
             <CSSReset/>
-            <div style={ {
+            <div style={{
                 display: "flex",
                 flexDirection: "column",
-                flex: 1,
-                // backgroundColor: "red",
-            } }>
+                flex: 1
+            }}>
                 <Menu/>
+                <main style={{
+                    display:"flex",
+                    flexDirection: "column",
+                    flex: 1
+                }}>
                 <Header/>
                 <Timeline playlists={ config.playlists }>
                     Conteúdo
                 </Timeline>
+                </main>
             </div>
         </>
     );
