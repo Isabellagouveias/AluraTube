@@ -1,8 +1,7 @@
 import config from "../config.json";
 import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
-import Menu from "../src/components/Menu";
-import { StyledTimeline } from "../src/components/Timeline";
+import { StyledTimeline } from "../src/components/TimeLine";
 
 function HomePage() {
     const estilosDaHomePage = {
@@ -20,7 +19,7 @@ function HomePage() {
                 flex: 1,
                 // backgroundColor: "red",
             }}>
-                <Menu />
+                Menu
                 <Header />
                 <Timeline playlists={config.playlists}>
                     Conteúdo
@@ -56,10 +55,10 @@ const StyledHeader = styled.div`
         gap: 16px;
     }
 `;
+
 function Header() {
     return (
         <StyledHeader>
-            {/* <img src="banner" /> */}
             <section className="user-info">
                 <img src={`https://github.com/${config.github}.png`} />
                 <div>
